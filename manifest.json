@@ -1,0 +1,15 @@
+{
+  "name": "Instagram As I Want",
+  "version": "1.0",
+  "description": "Add actions to facilitate the usage of the Instagram on web",
+  "permissions": ["declarativeContent", "storage"],
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.instagram.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
